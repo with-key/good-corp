@@ -1,6 +1,9 @@
-# stack
+### main 
 next (app router)
-react 19 
-sass 
-cva
+react
+sass (+ cva)
+prisma
+FSD
+
+
 

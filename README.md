@@ -1,9 +1,11 @@
-### main 
-next (app router)
-react
-sass (+ cva)
-prisma
-FSD
+# drizzle
 
 
+```shell
+npx drizzle-kit migrate
+```
+
+```shell
+npx drizzle-kit generate
+```
 

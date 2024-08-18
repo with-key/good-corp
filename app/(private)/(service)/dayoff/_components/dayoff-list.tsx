@@ -1,13 +1,15 @@
-import { getDayoffList } from "../_libs/actions";
+// import { SelectUser } from "@/app/db/schema";
+import { getUsers } from "../_libs/actions";
+
+type ListProps = {
+  // users: SelectUser[];
+};
+const List = ({ users }: ListProps) => {
+  return <div></div>;
+};
 
 export async function DayoffList() {
-  const dayoffList = await getDayoffList();
+  const users = await getUsers();
 
-  return (
-    <>
-      {dayoffList.map((item) => (
-        <div key={item.id}>{item.startdDate.toLocaleString()}</div>
-      ))}
-    </>
-  );
+  return <List users={users}></List>;
 }

@@ -38,12 +38,12 @@ export async function signup(formData: FormData) {
       data: {
         nickname: "with",
         age: 33,
-        workingStartDate: "2017-10-01",
+        working_start_date: "2017-10-01",
       },
     },
   });
 
-  console.log(result);
+  console.log(error);
 
   if (error) {
     redirect("/error");

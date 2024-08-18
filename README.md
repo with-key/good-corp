@@ -1,11 +1,9 @@
-# drizzle
+### easy-work
+- "Welfare point" management system for small businesses
 
-
-```shell
-npx drizzle-kit migrate
-```
-
-```shell
-npx drizzle-kit generate
-```
-
+### main stack
+- next.js 14 (app router)
+- supabase database
+- supabase auth
+- drizzle
+- sass

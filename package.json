@@ -7,9 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "migration": "npx drizzle-kit migration",
+    "mig": "npx drizzle-kit migration",
     "push": "npx drizzle-kit push",
-    "generate": "npx drizzle-kit generate"
+    "gen": "npx drizzle-kit generate"
   },
   "type": "commonjs",
   "dependencies": {

@@ -1,15 +1,11 @@
 // import { SelectUser } from "@/app/db/schema";
-import { getUsers } from "../_libs/actions";
-
-type ListProps = {
-  // users: SelectUser[];
-};
-const List = ({ users }: ListProps) => {
-  return <div></div>;
-};
+import { getMealExpenses, getUsers } from "../_libs/actions";
 
 export async function DayoffList() {
-  const users = await getUsers();
+  const context = await getMealExpenses();
 
-  return <List users={users}></List>;
+  console.log(context);
+
+  // return <List users={users}></List>;
+  return <></>;
 }

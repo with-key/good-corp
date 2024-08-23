@@ -1,20 +1,23 @@
-### features
-### 유저 
-- 유저는 "식대"를 가진다.
-- 유저는 "포인트"를 가진다.
-- 
-- dayoff 
-  - 휴가 생성
-  - 휴가 상태 변경
-### meal
-  - 식대 생성 : 사용한 식대를 기록하는 기능
-    - 
-  - 식대 수정 : 기록한 식대를 수정하는 기능
-  - 식대 삭제
-- point
+### "Easy Work"
+"Welfare point" management system for small enterprise
 
-### Design
-4개의 레이어로 나누어서 디자인을 구현한다.
+### Tech Stack
+- Typescript
+- React ^19, Next ^14
+- Supabase database, drizzle, Supabase auth
+- Radix, module sass
+
+### Architecture
+`FSD`를 적용한다
+- app
+- pages
+- widgets
+- features
+- entity
+- shared
+
+### Design System
+4개의 레이어로 컴포넌트 및 디자인 구현
 1. design system
   - 추상화을 높여서 확장성과 재사용성을 높인다.
   - 높은 수준의 추상화로 인해 사용성은 떨어진다.
@@ -30,4 +33,5 @@
 4. domain components composition
   - 사용성에 치우친 컴포넌트
   - domain components의 조합으로 구현한다.
-  - widgets 에서 관리한다.
+  - `widgets` 에서 관리한다.
+

@@ -7,13 +7,15 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "mig": "npx drizzle-kit migration",
+    "mig": "npx drizzle-kit migrate",
     "push": "npx drizzle-kit push",
     "gen": "npx drizzle-kit generate"
   },
   "type": "commonjs",
   "dependencies": {
     "@prisma/client": "5.18.0",
+    "@radix-ui/colors": "^3.0.0",
+    "@radix-ui/react-checkbox": "^1.1.1",
     "@radix-ui/react-icons": "^1.3.0",
     "@supabase/ssr": "^0.4.0",
     "@supabase/supabase-js": "^2.45.1",

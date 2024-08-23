@@ -2,7 +2,7 @@
 
 import { useFormState } from "react-dom";
 import { createDayoff } from "../_libs/actions";
-import { IsPendingForm } from "@/shared/ui/is-pending-form";
+import { IsPendingForm } from "@/shared/is-pending-form";
 import { Button } from "@/shared/ui/button";
 
 export function DayoffForm() {

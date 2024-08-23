@@ -1,7 +1,13 @@
 "use server";
 
 import { db } from "@/app/db";
-import { dayoffSchema } from "@/app/db/schema";
+import {
+  dayoffs,
+  mealExpenses,
+  profiles,
+  profilesToMealExpenses,
+} from "@/app/db/schema";
+import { eq } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 
 export const createDayoff = async (prevState: any, formData: FormData) => {
@@ -36,6 +42,28 @@ export const getUsers = async () => {
       res(1);
     }, 1000);
   });
+
+  return [];
+};
+
+export const getMealExpenses = async () => {
+  const mealExpensesList = await db.select().from(mealExpenses).execute();
+
+  console.log(mealExpensesList);
+
+  // 2. 각 식사 내역에 대해 참여자 목록을 추가
+  // const result = await Promise.all(
+  //   mealExpensesList.map(async (meal) => {
+  //     const participants = await db
+  //       .select()
+  //       .from(profilesToMealExpenses)
+  //       .innerJoin(profiles, eq(profilesToMealExpenses.profileId, profiles.id))
+  //       .where(eq(profilesToMealExpenses.mealExpenseId, meal.id))
+  //       .execute();
+
+  //     return { ...meal, participants };
+  //   })
+  // );
 
   return [];
 };

@@ -1,6 +1,0 @@
-@use "abstracts/variables" as *;
-
-@mixin shadow_alternative {
-  box-shadow: $sd-alias-shadow-alternative-x $sd-alias-shadow-alternative-y $sd-alias-shadow-alternative-blur
-    $sd-alias-shadow-alternative-spread $sd-alias-shadow-alternative-color;
-}

@@ -1,0 +1,14 @@
+@use "variables" as *;
+@use "map" as *;
+
+@mixin shadow_alternative {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+@mixin gap-util($property) {
+  @each $key, $value in $gaps {
+    &.#{$property}#{$key} {
+      #{$property}: $value;
+    }
+  }
+}

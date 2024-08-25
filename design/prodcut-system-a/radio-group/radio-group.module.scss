@@ -1,0 +1,90 @@
+@use "variables" as *;
+
+.root {
+  &.default {
+    .container {
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .item {
+      all: unset;
+
+      background-color: $mold-white;
+      width: 110px;
+      border: 1px solid $mold_border_default_color;
+      height: 36px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &[data-state="checked"] {
+        color: $mold-blue-01;
+        border: 1px solid $mold-blue-01;
+      }
+
+      &:first-child {
+        border-top-left-radius: $mold-radii-large;
+        border-bottom-left-radius: $mold-radii-large;
+      }
+
+      &:last-child {
+        border-top-right-radius: $mold-radii-large;
+        border-bottom-right-radius: $mold-radii-large;
+      }
+    }
+  }
+
+  &.secondary {
+    .container {
+      display: inline-flex;
+      border: 1px solid $mold-border-default-color;
+      padding: 4px;
+      border-radius: $mold-radii-large;
+    }
+
+    .badge {
+      width: 41px;
+      height: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $mold-blue-01;
+      border-radius: $mold-radii-full;
+      color: $mold-white;
+      font-size: 10px;
+    }
+
+    .item {
+      all: unset;
+      font-size: 10px;
+
+      background-color: white;
+      height: 30px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      border-radius: $mold-radii-medium;
+      padding: 0 10px;
+
+      max-width: 200px;
+
+      overflow: hidden;
+      white-space: nowrap;
+
+      // & div {
+      // }
+
+      &[data-state="checked"] {
+        color: $mold-white;
+        background-color: $mold-blue-01;
+
+        .badge {
+          background-color: $mold-white;
+          color: $mold-blue-01;
+        }
+      }
+    }
+  }
+}

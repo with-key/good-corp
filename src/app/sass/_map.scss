@@ -1,0 +1,17 @@
+@use "variables" as *;
+
+$gaps: (
+  50: $mold-alias-spacing-50,
+  100: $mold-alias-spacing-100,
+  150: $mold-alias-spacing-150,
+  200: $mold-alias-spacing-200,
+  250: $mold-alias-spacing-250,
+  300: $mold-alias-spacing-300,
+  350: $mold-alias-spacing-350,
+  400: $mold-alias-spacing-400,
+  450: $mold-alias-spacing-450,
+  500: $mold-alias-spacing-500,
+  550: $mold-alias-spacing-550,
+  600: $mold-alias-spacing-600,
+  650: $mold-alias-spacing-650
+);

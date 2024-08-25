@@ -1,0 +1,41 @@
+@use "variables" as *;
+@use "map" as *;
+@use "mixins" as *;
+
+.stack {
+  @include gap-util("gap");
+
+  &.row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &.column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &.alignStart {
+    align-items: flex-start;
+  }
+
+  &.alignCenter {
+    align-items: center;
+  }
+
+  &.alignEnd {
+    align-items: flex-end;
+  }
+
+  &.justifyStart {
+    justify-content: flex-start;
+  }
+
+  &.justifyCenter {
+    justify-content: center;
+  }
+
+  &.justifyEnd {
+    justify-content: flex-end;
+  }
+}
